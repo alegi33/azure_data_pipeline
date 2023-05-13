@@ -1,0 +1,34 @@
+{
+	"name": "pipeline_load_2021_payroll_into_synapse",
+	"properties": {
+		"activities": [
+			{
+				"name": "dataflow_payroll_synapse",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "dataflow_payroll_synapse",
+						"type": "DataFlowReference"
+					},
+					"compute": {
+						"coreCount": 16,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-05-13T08:10:58Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

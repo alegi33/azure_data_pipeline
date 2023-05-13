@@ -1,0 +1,17 @@
+{
+	"name": "ds_synapse_agency_master",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_synapse",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "agency_master"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

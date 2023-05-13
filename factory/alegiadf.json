@@ -1,0 +1,9 @@
+{
+	"name": "alegiadf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "00af04b3-9f4a-4a50-b593-3544d7ffcee1",
+		"tenantId": "f958e84a-92b8-439f-a62d-4f45996b6d07"
+	}
+}

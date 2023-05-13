@@ -1,0 +1,17 @@
+{
+	"name": "ds_synapse_job_title",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_synapse",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "job_title"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
